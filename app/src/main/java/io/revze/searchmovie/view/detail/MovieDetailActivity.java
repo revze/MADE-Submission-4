@@ -87,14 +87,6 @@ public class MovieDetailActivity extends AppCompatActivity implements MovieDetai
 
         uri = getIntent().getData();
 
-        if (uri != null) {
-            cursor = getContentResolver().query(uri, null, null, null, null);
-//            if (cursor != null) {
-//                if (cursor.moveToFirst()) currentFavoriteMovie = new FavoriteMovie(cursor);
-//                cursor.close();
-//            }
-        }
-
         swrDetail.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -164,6 +156,7 @@ public class MovieDetailActivity extends AppCompatActivity implements MovieDetai
     @Override
     public void onSuccessGetDetail(MovieDetailResponse response) {
         this.response = response;
+        cursor = getContentResolver().query(uri, null, null, null, null);
 
         if (menuFavorite != null) {
             menuFavorite.setVisible(true);

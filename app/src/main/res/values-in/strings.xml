@@ -11,7 +11,7 @@
     <string name="movie_detail_release_date">Tanggal Rilis</string>
     <string name="movie_detail_overview">Ikhtisar</string>
     <string name="movie_detail_genres">Genre</string>
-    <string name="movie_now_playing_title">Sedang Tayang</string>
+    <string name="movie_now_playing_title">Lagi Tayang</string>
     <string name="movie_up_playing_title">Akan Datang</string>
     <string name="movie_search_movie_title">Cari Film</string>
     <string name="language_setting">Pengaturan Bahasa</string>
